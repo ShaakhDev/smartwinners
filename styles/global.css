@@ -64,6 +64,9 @@ button {
 	line-height: 4.2rem !important;
 	text-align: center;
 }
+.pt-5 {
+	padding-top: 5rem;
+}
 
 .d-flex {
 	display: flex !important;
