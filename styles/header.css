@@ -1,0 +1,7 @@
+.header .box {
+	background-image: url("../images/banner.png");
+	min-height: 46rem;
+}
+.header {
+	padding-top: 2rem;
+}

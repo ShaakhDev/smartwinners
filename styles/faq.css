@@ -1,0 +1,36 @@
+.accordion-body {
+	height: 0;
+	display: none;
+	font-size: 1.4rem;
+	padding: 2rem 2rem;
+}
+.accordion-body.open {
+	min-height: 4rem;
+	height: auto;
+	display: block;
+}
+.accordion .accordion-item {
+	border-bottom: 1px solid var(--card-border-color);
+	width: 50%;
+}
+.accordion-header h3 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: var(--secondary-color);
+}
+.accordion-header {
+	padding: 0.5rem 0;
+}
+.accordion-arrow.open {
+	transform: rotate(180deg);
+}
+/* @keyframes openAccordion {
+	0% {
+		height: 0;
+		display: none;
+	}
+	100% {
+		height: auto;
+		display: block;
+	}
+} */

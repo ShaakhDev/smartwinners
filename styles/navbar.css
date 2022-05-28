@@ -1,0 +1,47 @@
+.navbar {
+	font-size: 1.4rem;
+}
+.navbar .navbar-brand {
+	padding-right: 3rem;
+}
+.navbar-menu {
+	height: 3.4rem;
+	margin-top: 1.5rem;
+	background: var(--primary-color);
+	border-radius: 0.5rem;
+}
+.navbar-menu ul li {
+	list-style-type: none;
+	text-transform: uppercase;
+	padding: 0 2.5rem;
+	font-weight: bold;
+	border-right: 1px solid var(--white);
+}
+.navbar-menu ul li a {
+	color: var(--white);
+}
+.navbar-menu button {
+	background: var(--secondary-color);
+	padding: 0.92rem 2rem;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+	color: var(--white);
+	font-weight: bold;
+}
+
+.navbar .social-box a {
+	padding: 0 0.5rem;
+}
+.navbar .social-box {
+	padding-right: 2rem;
+}
+.navbar .socials .language-dropdown select {
+	padding: 0 0.5rem;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.navbar .socials .language-dropdown {
+	padding: 0.5rem;
+	vertical-align: middle;
+}

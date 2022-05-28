@@ -1,0 +1,26 @@
+.footer {
+	min-height: 40rem;
+	margin-top: 4rem;
+}
+.footer .box {
+	background-image: url("../images/background-stars.svg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	min-height: 40rem;
+	position: relative;
+}
+.footer .box::after {
+	content: "";
+	clear: both;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	background: linear-gradient(
+		to bottom,
+		var(--white) 0%,
+		rgba(224, 224, 224, 0.4) 100%
+	);
+}

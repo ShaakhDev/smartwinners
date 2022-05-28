@@ -1,0 +1,10 @@
+/* import all css files from current directory: header,navbar,play-online, suggestion,upcoming, winners, faq, footer */
+@import url("./navbar.css");
+@import url("./header.css");
+@import url("./suggestion.css");
+@import url("./upcoming.css");
+@import url("./play-online.css");
+@import url("./global.css");
+@import url("./winners.css");
+@import url("./faq.css");
+@import url("./footer.css");

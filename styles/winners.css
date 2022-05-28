@@ -1,0 +1,118 @@
+.winners {
+	margin-top: 8.5rem;
+}
+.winners .box {
+	display: grid;
+	grid-template-columns: minmax(77rem, 3fr) minmax(38rem, 1fr);
+	column-gap: 1.5rem;
+}
+.winner-card {
+	border: 1px solid var(--card-border-color);
+	border-radius: 0.8rem;
+	min-height: 38rem;
+	padding: 2rem;
+	text-align: center;
+}
+.winner-card .head span {
+	font-size: 3.6rem;
+	text-transform: uppercase;
+	vertical-align: top;
+	font-weight: 500;
+}
+.winner-card .head span span {
+	color: var(--secondary-color);
+}
+.winner-card .body {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1.5rem;
+}
+.winner-card .body .info {
+	padding: 1rem 4rem 1rem 3rem;
+	text-align: left;
+}
+.winner-card .body .info h3 {
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+.winner-card .body .info p {
+	font-size: 1.4rem;
+	line-height: 2.6rem;
+}
+.winner-card .info .full-story {
+	text-align: center;
+	font-size: 1.4rem;
+	text-decoration: underline;
+	margin: 3rem 0;
+}
+.winner-card .info button {
+	font-size: 1.4rem;
+	padding: 1rem 4rem;
+	width: 100%;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	background: var(--primary-button-color);
+}
+.winner-card .body .result {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 1rem 0;
+}
+.winner-card .body .result span {
+	color: var(--white);
+	background: var(--primary-color);
+	padding: 0.35rem 0.35rem;
+	border-radius: 50%;
+}
+.winner-card .body .date {
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.winners .total-prize-card {
+	border: 1px solid var(--card-border-color);
+	border-radius: 0.8rem;
+	min-height: 9.8rem;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+}
+.winners .total-prize-card p {
+	font-size: 1.8rem;
+}
+
+.winners .total-prize-card span {
+	font-size: 2.6rem;
+	font-weight: 500;
+}
+.winners .total-prize-card .total-prize {
+	color: var(--cost-color);
+}
+.winners .winners-card-box .card {
+	border: 1px solid var(--card-border-color);
+	border-radius: 0.8rem;
+	min-height: 7.8rem;
+	width: 100%;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+.winners .winners-card-box {
+	max-height: 27.2rem;
+	overflow-y: scroll;
+}
+.winners .winners-card-box .card .info {
+	margin-left: 2rem;
+	font-size: 1.4rem;
+}
+.winners-card-box .card .info img {
+	vertical-align: middle;
+	margin-right: 1rem;
+}
+.winners-card-box .card .info p {
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin: 0.3rem 0;
+}

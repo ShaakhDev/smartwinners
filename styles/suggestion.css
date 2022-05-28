@@ -1,0 +1,26 @@
+.suggestions {
+	margin: 3rem 0;
+}
+.suggestions .card-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1.5rem;
+}
+.suggestions .card-box .card {
+	border: 1px solid var(--card-border-color);
+	border-radius: 0.8rem;
+	padding: 1rem 2rem;
+	min-height: 9rem;
+	font-size: 1.4rem;
+}
+.suggestions .card-content .head {
+	padding: 0.5rem 0;
+}
+.suggestions .card-content {
+	padding: 0 0 0 2rem;
+}
+.suggestions .card-content .head span {
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
