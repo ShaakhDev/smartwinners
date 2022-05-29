@@ -4,6 +4,9 @@ const upcoming = document.querySelector('#upcomingLotteryBox');
 const playOnline = document.querySelector('#playOnlineCardBox');
 const winnerBox = document.querySelector('#winnersCardBox');
 const accordion = document.querySelector('#accordion');
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.navbar-menu');
+const closeMenu = document.querySelector('.close');
 
 function renderCards(cards) {
     cardBox.innerHTML = cards.map((card, index) => {
@@ -55,8 +58,12 @@ function renderUpcoming() {
     }
 }
 
+let isMobile = window.innerWidth < 500;
+
 function renderPlayOnline() {
-    for (let i = 1; i <= 10; i++) {
+    let limitCards = isMobile ? 6 : 10;
+
+    for (let i = 1; i <= limitCards; i++) {
         playOnline.innerHTML += `
         <div class="play-online-card">
         <span class="star">&starf;</span>
@@ -131,3 +138,21 @@ renderUpcoming();
 renderPlayOnline();
 renderWinnersCard();
 renderAccordion();
+
+
+
+//mobile navbar menu
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+closeMenu.addEventListener('click', () => {
+    menu.classList.remove('active');
+})
+console.log(menu.children[0].children)
+let menuItems = [...menu.children[0].children];
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    })
+})

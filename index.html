@@ -17,7 +17,7 @@
         <nav class="navbar">
             <div class="box">
                 <div class="row d-flex j-between a-center">
-                    <div class="d-row a-center">
+                    <div class="mobile d-row a-center">
                         <div class="navbar-brand">
                             <a href="/">
                                 <img src="./images/logo.svg" alt="brand-logo">
@@ -27,6 +27,12 @@
                             <p>Welcome <b>Rome</b> - <a href="#"> Logout</a></p>
                             <p>Your balance: <b>P 0,00</b></p>
                         </div>
+                    </div>
+                    <div class="menu-icon mobile-only">
+                        <img src="./images/mobile-menu.svg" alt="menu">
+                    </div>
+                    <div class="avatar-icon mobile-only">
+                        <img src="./images/mobile-ava.svg" alt="">
                     </div>
                     <div class="socials">
                         <div class="social-box">
@@ -57,28 +63,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="navbar-menu d-row a-center j-between">
+                <div class="row ">
+                    <div class="navbar-menu mobile-only d-row a-center j-between">
                         <ul class="d-row">
                             <li>
-                                <a href="/">Home</a>
+                                <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="/about">Play all lottery</a>
+                                <a href="#">Play all lottery</a>
                             </li>
                             <li>
-                                <a href="/contact">lottery groups</a>
+                                <a href="#">lottery groups</a>
                             </li>
                             <li>
-                                <a href="/contact">promotions</a>
+                                <a href="#">promotions</a>
                             </li>
                         </ul>
-                        <button class="my-account">my account</>
+                        <button class="my-account ">my account</button>
+                        <span class="d-none close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                                    fill="rgba(255,255,255,1)" />
+                            </svg>
+                        </span>
                     </div>
                 </div>
             </div>
         </nav>
-        <header class="header" id="header">
+        <header class="header " id="header">
             <div class="box">
 
             </div>
@@ -100,7 +114,7 @@
 
         </div>
 
-        <section class="upcoming-lottery">
+        <section class="upcoming-lottery ">
             <div class="box">
                 <div id="upcomingLotteryBox" class="upcoming-lottery-cards">
                     <!-- here will be upcoming lottery cards -->
@@ -109,7 +123,7 @@
             </div>
         </section>
 
-        <section class="play-online" id="playOnline">
+        <section class="play-online " id="playOnline">
             <div class="box">
                 <div class=" title">
                     <h2>Play upcoming lotteries online</h2>
@@ -123,13 +137,13 @@
 
         </section>
 
-        <section class="winners" id="winners">
+        <section class="winners " id="winners">
             <div class="box">
                 <div class="col">
                     <div class=" title">
                         <h2>Biggest lottery winner</h2>
                     </div>
-                    <div class="winner-card">
+                    <div class="winner-card ">
                         <div class="head">
                             <img src="./images/img.svg" alt="winner-image">
                             <span>won <span> &euro; 100 000 000</span></span>
@@ -191,20 +205,23 @@
                 </div>
             </div>
         </section>
-        <div class="section-heading">
+        <div class="section-heading faq">
             <div class="box">
                 <h2>frequently asked questions (F.A.Q.)</h2>
             </div>
-            <!-- accordion dropdowns -->
+
+
+
+        </div>
+        <section class="faq">
             <div class="box">
                 <div id="accordion" class="accordion">
 
                     <!-- here will render accordion items -->
                 </div>
             </div>
-
-        </div>
-        <footer class="footer" id="footer">
+        </section>
+        <footer class="footer " id="footer">
             <div class="col-box">
                 <div class="col d-row">
                     <img src="./images/social-4.svg" alt="">
@@ -252,14 +269,18 @@
                     </p>
                 </div>
                 <div class="col">
-                    <div class="col-title">
-                        <h2>payment methods</h2>
+                    <div>
+                        <div class="col-title">
+                            <h2>payment methods</h2>
+                        </div>
+                        <img src="./images/payments.svg" alt="payments">
                     </div>
-                    <img src="./images/payments.svg" alt="payments">
-                    <div class="col-title pt-5">
-                        <h2>security & trust</h2>
+                    <div>
+                        <div class="col-title pt-5">
+                            <h2>security & trust</h2>
+                        </div>
+                        <img src="./images/icon-footer.svg" alt="icons">
                     </div>
-                    <img src="./images/icon-footer.svg" alt="icons">
                 </div>
             </div>
         </footer>

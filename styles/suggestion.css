@@ -24,3 +24,23 @@
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
+@media screen and (max-width: 500px) {
+	.suggestions {
+		margin: 1rem 0;
+	}
+	.suggestions .card-box {
+		grid-template-columns: 1fr;
+	}
+	.suggestions .card-box .card {
+		margin-top: 1.5rem;
+		font-size: 1.2rem;
+		padding: 0.5rem;
+	}
+	.card-box .card .head span {
+		font-size: 1.4rem;
+	}
+	.suggestions .card-content {
+		padding: 0 0 0 1rem;
+	}
+}

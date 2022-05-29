@@ -1,7 +1,15 @@
 .header .box {
-	background-image: url("../images/banner.png");
+	background-image: url("../images/banner.webp");
 	min-height: 46rem;
 }
 .header {
 	padding-top: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+	.header .box {
+		min-height: 18rem;
+		max-width: 99vw;
+		background-size: contain;
+	}
 }

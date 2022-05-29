@@ -3,7 +3,8 @@
 }
 .winners .box {
 	display: grid;
-	grid-template-columns: minmax(77rem, 3fr) minmax(38rem, 1fr);
+	/* grid-template-columns: minmax(77rem, 3fr) minmax(38rem, 1fr); */
+	grid-template-columns: 3fr 1fr;
 	column-gap: 1.5rem;
 }
 .winner-card {
@@ -115,4 +116,38 @@
 	font-size: 1.4rem;
 	font-weight: 600;
 	margin: 0.3rem 0;
+}
+
+@media screen and (max-width: 500px) {
+	.winners .box {
+		grid-template-columns: 1fr;
+		max-width: 90vw;
+	}
+	.winner-card {
+		max-width: 90vw;
+		padding: 2rem 0;
+	}
+	.winner-card .image img {
+		max-width: 90vw;
+	}
+	.winner-card .body {
+		grid-template-columns: 1fr;
+		width: inherit;
+		padding: 0;
+	}
+
+	.winner-card .head span {
+		font-size: 2.4rem;
+		vertical-align: text-bottom;
+	}
+	.winner-card .head img {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+	.winners {
+		margin-top: 2rem;
+	}
+	.winners .title {
+		margin-top: 2rem;
+	}
 }
